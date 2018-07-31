@@ -1,0 +1,41 @@
+.about-container {
+  padding-top:20px;
+
+}
+.team-mates{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.header {
+  overflow: hidden;
+  background-color: #808080;
+  padding: 30px 30px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 8px;
+}
+.about
+{
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+  font-size: 1.2em;
+}
+.about li{
+  
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: rgb(207, 240, 221);
+    margin: .5em;
+    padding: .3em 0;
+    height: 2em;
+    border-radius: 4px;
+}
+.about li:hover {
+  color: rgb(16, 158, 230);
+  background-color: #DDD;
+  left: .1em;
+}

@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">E-com</a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" [ngClass] ="{'show':navbarOpen}">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav item">
+        <a class="nav-link" routerLink="home">Home</a>
+        <a class="nav-link" routerLink="/products">Product</a>
+        <a class="nav-link" routerLink="/cart">Cart</a>
+        <a class="nav-link" routerLink="/about">About Us</a>
+        
+      <ng-template [ngIf]='user.username' [ngIfElse]='Guest'>
+          Welcome {{ user.username }}
+          <br>
+          <a routerLink='/logout' routerLinkActive="active">Log Out</a>
+        </ng-template>
+        <ng-template #Guest>
+          <a routerLink='/login' routerLinkActive="active">Log In</a>
+        </ng-template>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,13 @@
+.header {
+    overflow: hidden;
+    background-color: #808080;
+    padding: 30px 30px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 8px;
+  }
+
+  .btn-position{
+    margin-left: 100px;
+  }
